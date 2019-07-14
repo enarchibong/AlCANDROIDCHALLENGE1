@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="endomain.alcandroidchallenge1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO MY PROFILE!"
+        android:layout_marginTop="28dp"
+        android:id="@+id/ACtextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/profileDp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/winter"
+        android:layout_below="@+id/ACtextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enomfon Maurice Archibong"
+        android:id="@+id/nameTextView"
+        android:layout_below="@+id/profileDp"
+        android:layout_alignStart="@+id/ACtextView"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Web Track and Android Track"
+        android:id="@+id/trackTextView"
+        android:layout_below="@+id/nameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country: Nigeria"
+        android:id="@+id/countryTextView"
+        android:layout_below="@+id/trackTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09081446412"
+        android:id="@+id/pNumTextView"
+        android:layout_below="@+id/countryTextView"
+        android:layout_alignEnd="@+id/countryTextView"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enomfon.archibong@gmail.com"
+        android:id="@+id/emailTextView"
+        android:layout_below="@+id/pNumTextView"
+        android:layout_alignStart="@+id/nameTextView"
+        android:layout_marginTop="21dp" />
+
+</RelativeLayout>
