@@ -18,17 +18,20 @@ public class Activity2 extends AppCompatActivity {
         String url= "https://www.andela.com/alc/";
 
         webView=(WebView) findViewById(R.id.ABwebView);
+
         webView.getSettings().setJavaScriptEnabled(true);
+        webView.getSettings().setDomStorageEnabled(true);
+        webView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
 
         webView.setWebViewClient(new WebViewClient(){
 
-            public void onRecievedSslError(WebView view, SslErrorHandler handler, SslError error){
-                handler.proceed();
+            @Override
+            public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error){
+             handler.proceed();
             }
         });
 
-
-
         webView.loadUrl(url);
     }
+
 }
