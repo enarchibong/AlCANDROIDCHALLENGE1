@@ -7,22 +7,29 @@
     tools:context="endomain.alcandroidchallenge1.MainActivity">
 
     <TextView
+        android:id="@+id/wlcTtextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to ALC 4.0"
-        android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp" />
+        android:layout_marginTop="60dp"
+        android:text="Welcome to ALC 4.0"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/buttonB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
         android:text="About ALC"
-        android:layout_marginBottom="38dp"
+        android:textSize="20sp"
+        android:background="@android:color/holo_orange_light"
+        android:paddingRight="9dp"
+        android:paddingLeft="9dp"
         android:layout_above="@+id/buttonC"
-        android:layout_alignStart="@+id/buttonC" />
+        android:layout_alignEnd="@+id/buttonC" />
 
     <Button
         android:id="@+id/buttonC"
@@ -30,7 +37,11 @@
         android:layout_height="wrap_content"
         android:text="My profile"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:background="@android:color/holo_orange_light"
+        android:paddingRight="9dp"
+        android:paddingLeft="9dp" />
 
 
 </RelativeLayout>

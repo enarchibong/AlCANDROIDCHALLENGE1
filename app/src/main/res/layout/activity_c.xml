@@ -6,68 +6,89 @@
     android:layout_height="match_parent"
     tools:context="endomain.alcandroidchallenge1.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WELCOME TO MY PROFILE!"
-        android:layout_marginTop="28dp"
-        android:id="@+id/ACtextView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
     <ImageView
         android:id="@+id/profileDp"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+
         android:src="@drawable/winter"
-        android:layout_below="@+id/ACtextView"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="13dp" />
+        android:layout_marginStart="10dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enomfon Maurice Archibong"
         android:id="@+id/nameTextView"
-        android:layout_below="@+id/profileDp"
-        android:layout_alignStart="@+id/ACtextView"
-        android:layout_marginTop="29dp" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Web Track and Android Track"
-        android:id="@+id/trackTextView"
-        android:layout_below="@+id/nameTextView"
+        android:text="Enomfon  Archibong"
+        android:layout_below="@+id/profileDp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="27dp"
+        android:textColor="@android:color/black"
+        android:textSize="27sp"/>
+
+    <View
+        android:id="@+id/hrView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        android:visibility="visible"
+        android:layout_below="@+id/nameTextView" />
 
     <TextView
+        android:id="@+id/trackTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Track; Android"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:layout_below="@+id/hrView"
+        android:layout_alignStart="@+id/profileDp" />
+
+    <TextView
+        android:id="@+id/countryTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Country: Nigeria"
-        android:id="@+id/countryTextView"
+        android:layout_marginTop="19dp"
         android:layout_below="@+id/trackTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp" />
+        android:layout_alignStart="@+id/trackTextView"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="09081446412"
-        android:id="@+id/pNumTextView"
-        android:layout_below="@+id/countryTextView"
-        android:layout_alignEnd="@+id/countryTextView"
-        android:layout_marginTop="11dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enomfon.archibong@gmail.com"
         android:id="@+id/emailTextView"
-        android:layout_below="@+id/pNumTextView"
-        android:layout_alignStart="@+id/nameTextView"
-        android:layout_marginTop="21dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: Enomfon.archibong@gmail.com"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/countryTextView"
+        android:layout_alignStart="@+id/countryTextView"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"/>
 
+    <TextView
+
+        android:id="@+id/pNumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number: 09081446412"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/emailTextView"
+        android:layout_alignStart="@+id/emailTextView"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/slackTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slack Username: @Enomfon A."
+        android:layout_below="@+id/pNumTextView"
+        android:layout_alignStart="@+id/countryTextView"
+        android:layout_marginTop="19dp"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"/>
 </RelativeLayout>
